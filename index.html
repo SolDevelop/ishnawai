@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة اشناواي الثانويه</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .trans {
+
+            background: linear-gradient(30deg, #269DD6 -43.4%, #6DD0FF 100%);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .roboto {
+            font-family: 'Roboto';
+        }
+
+        .inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .showtimediv {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            filter: drop-shadow(20px 30px 18.4px rgba(82, 0, 255, 0.33));
+        }
+
+        .showtimedivV {
+            border-radius: 22px;
+            background: linear-gradient(135deg, rgba(108, 26, 232, 0.64) 21.6%, #440490 78.4%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body class="h-full w-screen trans overflow-y-auto overflow-x-hidden">
+    <div style="background: rgba(88, 88, 88, 0.83);" id="showtime-hide" onclick="hideY()" class="w-screen hidden absolute z-50">
+
+    </div>
+    <div  id="showtime-info-arabic"
+        class="showtimediv hidden  z-[60] w-full">
+        <div class="showtimedivV flex flex-col h-full items-center justify-center w-full px-8 py-12 pb-16 gap-12">
+            <button onclick="hideY()" class="self-end items-center flex flex-row justify-center p-3"
+                style="border-radius: 23.5px;background: #000;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                    <path d="M2 2L24 24M2 24L24 2" stroke="white" stroke-width="3" />
+                </svg>
+            </button>
+            <div class="flex flex-col gap-4 justify-center items-center">
+                <div>
+                    <p class="text-8xl inter text-white">اهلا انا سليمان</p>
+                </div>
+                <div>
+                    <p class="inter text-xl text-white text-center" style="
+                    padding-left: 12rem;
+                    padding-right: 12rem;
+                " dir="rtl">
+                        انا طالب في الثانوي من مصر، و انا مش اي طالب عادي!
+                        انا اتعلمت PHP و ++C في 2019 و في باقي رحلتي
+                        اتعلمت JavaScript و TailwindCSS و Python
+                        ساعدوني اوي في حياتي.
+                        تحب تعرف اكتر عني؟ تقدر تشوف ال social medias بتاعتي
+                    </p>
+                </div>
+            </div>
+            
+            <div class="flex flex-row w-full" style="
+                padding-left: 14rem;
+                padding-right: 14rem;">
+                <div class="flex flex-col text-white inter gap-6 items-start grow">
+                    <p class="text-4xl text-right">مهراتي:</p>
+                    <p class="text-xl">
+                        1. PHP (خبير)<br>
+2. C++ (متوسط)<br>
+3. JavaScript (متقدم)<br>
+4. Python (متقدم)<br>
+5. Lua (مبتدئ)<br>
+6. C (مبتدئ)<br>
+7. Java (متوسط)
+                    </p>
+                </div>
+                <div class="flex flex-col text-white inter gap-6">
+                    <p class="text-4xl">Social Media: </p>
+                    <p class="text-xl whitespace-pre-line">Facebook: @solimanelg
+                        Instagram: @solimanelg
+                        Email: solelgammal@gmail.com
+                        Github: SolDevelop
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  id="showtime-info-english"
+    class="showtimediv hidden  z-[60] w-full">
+    <div class="showtimedivV flex flex-col h-full items-center justify-center w-full px-8 py-12 pb-16 gap-12">
+        <button onclick="hideY()" class="self-end items-center flex flex-row justify-center p-3"
+            style="border-radius: 23.5px;background: #000;box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                <path d="M2 2L24 24M2 24L24 2" stroke="white" stroke-width="3" />
+            </svg>
+        </button>
+        <div class="flex flex-col gap-4 justify-center items-center">
+            <div>
+                <p class="text-8xl inter text-white">Hi I’m Soliman!</p>
+            </div>
+            <div>
+                <p class="inter text-xl text-white text-center" style="
+                padding-left: 12rem;
+                padding-right: 12rem;
+            ">I’m a high school student from Egypt, and guess what? I'm not just your typical student, I learnt in 2019 C++ and PHP and later in my journey i learnt JavaScript, TailwindCSS, and Python. Which helped me go through a lot in my life. 
+Want to know more about me? check my social medias!</p>
+            </div>
+        </div>
+        
+        <div class="flex flex-row w-full" style="
+            padding-left: 14rem;
+            padding-right: 14rem;">
+            <div class="flex flex-col text-white inter gap-6 items-start grow">
+                <p class="text-4xl">Skills:</p>
+                <p class="text-xl">1. PHP (Expert)<br>
+                    2. C++ (Intermediate)<br>
+                    3. JavaScript (Advanced)<br>
+                    4. Python (Advanced)<br>
+                    5. Lua (Novice)<br>
+                    6. C (Novice)<br>
+                    7. Java (Intermediate)
+                </p>
+            </div>
+            <div class="flex flex-col text-white inter gap-6">
+                <p class="text-4xl">Social Media: </p>
+                <p class="text-xl whitespace-pre-line">Facebook: @solimanelg
+                    Instagram: @solimanelg
+                    Email: solelgammal@gmail.com
+                    Github: SolDevelop
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <nav class="w-screen relative bg-[#E35019] flex flex-row px-5 py-8 items-center">
+        <div class="relative flex flex-row items-end w-screen">
+            <div class="absolute top-[-1.6rem] self-start">
+                <img class="h-[9.1rem] w-[9.1rem]" src="/assets/logo.png">
+            </div>
+            <div class="w-full flex flex-row font-bold items-end justify-end gap-[3.8rem]">
+                <div class="relative">
+                    <p class="roboto text-2xl">الصفحة الرئيسية</p>
+                </div>
+                <div class="relative">
+                    <p class="roboto text-2xl">معلومات عنا</p>
+                </div>
+                <div class="relative">
+                    <p class="roboto text-2xl">شورط الاتحاق</p>
+                </div>
+                <div class="relative">
+                    <p class="roboto text-2xl">تواصل معنا</p>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+    <div class="flex flex-col mt-[5.3rem] gap-24">
+        <div class="flex flex-col">
+            <div class="flex flex-col  relative">
+                <div class="flex flex-col gap-20 relative">
+                    <div class="flex flex-col justify-center items-center inter">
+                        <p style="text-shadow: 0px 4px 4px rgba(123, 123, 123, 0.59);" class="text-[#E9E4E4] text-5xl">
+                            مرحبًا بك
+                            في</p>
+                        <p style="text-shadow: 0px 4px 4px rgba(10, 10, 10, 0.54);" class="text-white text-9xl">مدرسة
+                            إشناواي
+                            الثانوية</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="px-16 py-3 mt-[3rem]">
+                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div style="border-radius: 67px;" class="relative h-[43rem] overflow-hidden">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/assets/show-1.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/assets/show-2.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/assets/show-3.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="/assets/show-4.png"
+                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="flex flex-col inter w-full rounded-[60px] bg-[#FBFBFB] py-16 px-6 items-center justify-center gap-10">
+            <p class="text-6xl inter font-bold">:معلومات عنا</p>
+            <p class="text-2xl roboto whitespace-pre-line text-center">مرحبًا بكم في مدرسة إشناوي الثانوية، معلمة
+                التعليم
+                المتميزة في قرية إشناوي الساحرة. تأسست مدرسة إشناوي الثانوية في عام 1990، وتعتبر رمزًا للتراث التعليمي
+                الطويل الأمد في مصر. كمؤسسة حكومية تحت رعاية الحكومة المصرية، تلتزم مدرسة إشناوي الثانوية بتنمية عقول
+                الشباب وتشكيل قادة المستقبل لأكثر من ثلاثة عقود.
+
+                تقع مدرستنا في قلب القرية، وتستقبل طلابها ليس فقط من إشناوي بل أيضًا من المناطق المجاورة مثل إخناوي،
+                وشنرا، والردة. من خلال التزامنا بالتميز الأكاديمي والتنمية الشاملة، توفر مدرسة إشناوي الثانوية بيئة
+                ملائمة يمكن للطلاب فيها التألق على الصعيدين الفكري والاجتماعي والعاطفي.
+
+                في مدرسة إشناوي الثانوية، نؤمن بتعزيز ثقافة التضامن والاحترام والتعاون. من خلال مجموعة من الأنشطة
+                اللاصفية ومبادرات المشاركة المجتمعية والبرامج الأكاديمية، نهدف إلى غرس حب العلم والمسؤولية لدى طلابنا
+                مدى الحياة وتحفيزهم على الاهتمام بمجتمعهم وخارجه.
+
+                انضموا إلينا في مدرسة إشناوي الثانوية، حيث يلتقي التقليد بالابتكار، وحيث يتاح لكل طالب الفرصة للتألق.
+            </p>
+        </div>
+        <div class="flex flex-row">
+            <div class="grow">
+                <div class="self-start w-96 flex flex-col py-10 justify-center gap-5 items-center rounded-tr-[60px] bg-[#FBFBFB]"
+                    style="box-shadow: 16px 23px 4px 0px rgba(0, 0, 0, 0.29);">
+                    <p class="text-6xl inter font-bold">:شورط الاتحاق</p>
+                    <p class="text-2xl roboto whitespace-pre-line text-right">:يجب ان يسكن في
+                        اشناواي مركز السنطة .1
+                        اخناواي مركز طنطا .2
+                        الروضه مركز السنطة .3
+                        شنرة مركز السنطة .4</p>
+                    <p class="text-2xl roboto whitespace-pre-line text-right">يجب ان يكون طالب:
+                        ثانويه عامه او خدمات</p>
+                    <p class="text-3xl font-bold roboto whitespace-pre-line text-right">للاستفسار الرجاء التواصل معنا
+                    </p>
+                </div>
+            </div>
+
+            <div class="self-end w-96 flex flex-col py-10 justify-center gap-5 items-center rounded-tl-[60px] text-left bg-[#FBFBFB]"
+                style="box-shadow: 16px 23px 4px 0px rgba(0, 0, 0, 0.29);">
+                <p class="text-6xl inter font-bold">:للتواصل معنا</p>
+                <div class="flex flex-row gap-1">
+
+                    <p class="font-bold inter text-xl">Email: </p>
+                    <p class="inter text-xl font-light">esh_sec@yahoo.com</p>
+                </div>
+                <div class="flex flex-row gap-1">
+
+                    <p class="font-bold inter text-xl">Facebook:</p>
+                    <p class="inter text-2xl font-light">مدرسة انشانواي الثانويه </p>
+                </div>
+                <div class="flex flex-row gap-1">
+
+                    <p class="font-bold inter text-2xl">عنوان:</p>
+                    <p class="inter text-2xl font-light">اشانواي, مركز السنطه, الغربية </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="mt-[10rem] px-5 py-4 pr-24 flex flex-col gap-3 bg-black">
+        <div>
+            <p class="inter text-xl text-white">Made with 💖 by Soliman Elgammal </p>
+        </div>
+        <div class="w-full flex flex-row">
+            <button onclick="showtime('english')" style="filter: drop-shadow(23px 13px 18.4px rgba(82, 0, 255, 0.33));"
+                class="grow ">
+                <div style="border-radius: 16px;
+                background: linear-gradient(135deg, #6C1AE8 21.6%, #440490 78.4%);
+                
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;" class="w-max px-4 py-3">
+                    <p class="inter text-lg text-white font-light">Who am i?</p>
+                </div>
+            </button>
+            <button onclick="showtime('arabic')" style="filter: drop-shadow(-23px 13px 18.4px rgba(82, 0, 255, 0.33));">
+                <div style="border-radius: 16px;
+                background: linear-gradient(135deg, #6C1AE8 21.6%, #440490 78.4%);
+                
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;" class="w-max px-4 py-3 self-end">
+                    <p class="inter text-2xl text-white font-light">مين انا؟</p>
+                </div>
+            </button>
+
+        </div>
+        <div class="self-end">
+            <p class="text-white text-lg">2024</p>
+        </div>
+    </footer>
+    <script>
+        function getPageHeight() {
+            const body = document.body;
+            const html = document.documentElement;
+
+            const height = Math.max(
+                body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight
+            );
+
+            return height;
+        }
+
+        const pageHeight = getPageHeight();
+        function showtime(lang) {
+            if (lang == "arabic") {
+                const showtimeBG = document.getElementById("showtime-hide");
+                showtimeBG.classList.remove('hidden')
+                showtimeBG.style.height = pageHeight + 'px'
+                const showtime = document.getElementById("showtime-info-arabic");
+                showtime.classList.remove('hidden');
+            } else {
+                const showtimeBG = document.getElementById("showtime-hide");
+                showtimeBG.classList.remove('hidden')
+                showtimeBG.style.height = pageHeight + 'px'
+                const showtime = document.getElementById("showtime-info-english");
+                showtime.classList.remove('hidden');
+            }
+        }
+        function hideY(){
+            const showtimeBG = document.getElementById("showtime-hide");
+                showtimeBG.classList.add('hidden')
+                const showtime = document.getElementById("showtime-info-english");
+                showtime.classList.add('hidden');
+                const showtimeara = document.getElementById("showtime-info-arabic");
+                showtimeara.classList.add('hidden');
+        }
+
+    </script>
+</body>
+
+</html>
